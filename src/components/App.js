@@ -33,11 +33,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>App</h1>
-        <ul>
-          <li><a href="#/">Home</a></li>
-          <li><a href="#/users">Users</a></li>
-        </ul>
+        <nav className="navbar navbar-default">
+          <div className="navbar-header">
+            <a className="navbar-brand" href="#">Pusheen</a>
+          </div>
+          <div className="container-fluid">
+            <ul className="nav navbar-nav">
+              <li><a href="#/">Home</a></li>
+              <li><a href="#/users">Users</a></li>
+            </ul>
+          </div>
+        </nav>
         {this.renderRoute()}
       </div>
     );
